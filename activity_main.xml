@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pessoal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lb_grey"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/Pessoa_pim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="PESSOA"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pessoa_pim2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="344dp"
+        android:text="Tipo Telefone: " android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/endereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="216dp"
+        android:text="Endereço"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="Telefone" android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <TextView
+        android:id="@+id/CPF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPF"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <TextView
+        android:id="@+id/numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero" android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <TextView
+        android:id="@+id/numero__tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero" android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="286dp" />
+
+    <TextView
+        android:id="@+id/DDD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DDD" android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="234dp" />
+
+    <TextView
+        android:id="@+id/CEP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CEP" android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <Button android:textColor="@color/black"
+        android:id="@+id/cadastrardao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <Button android:textColor="@color/black"
+        android:id="@+id/alteradao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alterar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <Button android:textColor="@color/black"
+        android:id="@+id/excluirdao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excluir"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="444dp" />
+
+    <Button android:textColor="@color/black"
+        android:id="@+id/consultadao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consultar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="444dp" />
+
+    <ScrollView
+        android:id="@+id/Listaconsulta"
+        android:layout_width="409dp"
+        android:layout_height="238dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="512dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/Nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOME: "
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="44dp" />
+
+    <TextView
+        android:id="@+id/Logradouro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logradouro: " android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <TextView
+        android:id="@+id/bairro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bairro: " android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="216dp" />
+
+    <TextView
+        android:id="@+id/Cidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cidade: " android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <TextView
+        android:id="@+id/Estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado: " android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <RadioButton
+        android:id="@+id/novoendereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Novo Endereço"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <RadioButton
+        android:id="@+id/telnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Novo Telefone" android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="179dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="131dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="131dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber4"
+        android:layout_width="131dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber5"
+        android:layout_width="131dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="305dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="131dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
