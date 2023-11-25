@@ -16,18 +16,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="16dp"
-        android:text="PESSOA"
+        android:text="CLIENTE"
         android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/pessoa_pim2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="344dp"
-        android:text="Tipo Telefone: " android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,23 +33,13 @@
         tools:layout_editor_absoluteY="16dp" />
 
     <TextView
-        android:id="@+id/telefone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:text="Telefone" android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="151dp" />
-
-    <TextView
         android:id="@+id/CPF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CPF"
         android:textColor="@color/black"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteX="28dp"
         tools:layout_editor_absoluteY="70dp" />
 
     <TextView
@@ -72,22 +52,24 @@
         tools:layout_editor_absoluteY="132dp" />
 
     <TextView
-        android:id="@+id/numero__tel"
+        android:id="@+id/senha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Numero" android:textColor="@color/black"
+        android:text="Senha: "
+        android:textColor="@color/black"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="286dp" />
+        tools:layout_editor_absoluteY="184dp" />
 
     <TextView
-        android:id="@+id/DDD"
+        android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DDD" android:textColor="@color/black"
+        android:text="Email: "
+        android:textColor="@color/black"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="234dp" />
+        tools:layout_editor_absoluteY="132dp" />
 
     <TextView
         android:id="@+id/CEP"
@@ -161,8 +143,8 @@
         android:text="NOME: "
         android:textColor="@color/black"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="44dp" />
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="43dp" />
 
     <TextView
         android:id="@+id/Logradouro"
@@ -212,15 +194,6 @@
         tools:layout_editor_absoluteX="216dp"
         tools:layout_editor_absoluteY="51dp" />
 
-    <RadioButton
-        android:id="@+id/telnew"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Novo Telefone" android:textColor="@color/black"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="179dp" />
-
     <EditText
         android:id="@+id/editTextNumber"
         android:layout_width="131dp"
@@ -249,7 +222,7 @@
         android:inputType="number"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="253dp" />
+        tools:layout_editor_absoluteY="151dp" />
 
     <EditText
         android:id="@+id/editTextNumber5"
@@ -259,7 +232,7 @@
         android:inputType="number"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="305dp" />
+        tools:layout_editor_absoluteY="203dp" />
 
     <EditText
         android:id="@+id/editTextNumber3"
